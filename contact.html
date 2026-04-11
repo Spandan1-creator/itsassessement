@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Contact</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -19,12 +19,12 @@
         <a href="sitemap.html">Sitemap</a>
     </nav>
 
-    <h1>Gallery</h1>
-    <div class="gallery">
-        <a href="img1.jpg" target="_blank"><img src="img1.jpg" alt="image"></a>
-        <a href="img2.jpg" target="_blank"><img src="img2.jpg" alt="image"></a>
-        <a href="img3.jpg" target="_blank"><img src="img3.jpg" alt="image"></a>
-    </div>
+    <h1>Contact Us</h1>
+    <form  onsubmit="return validateForm()">
+        Name: <input type="text"  id="name"> <br><br>
+        Email <input type="text"  id="email"> <br><br>
+        Message: <textarea id="message"></textarea> <br><br>
+    </form>
 
     <footer><p>Travel Nepal</p></footer>
     
