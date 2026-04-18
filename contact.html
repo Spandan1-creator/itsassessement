@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | Himalayan Horizons — Book Your Trek</title>
-  <meta name="description" content="Contact Himalayan Horizons to book your Nepal trek, ask a question, or get a custom travel quote. We reply within 24 hours." />
+  <meta name="description"
+    content="Contact Himalayan Horizons to book your Nepal trek, ask a question, or get a custom travel quote. We reply within 24 hours." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-  <!-- =====================================================
-       PERSISTENT NAVIGATION (identical on every page)
-       ===================================================== -->
+
   <header id="site-header">
     <div class="nav-wrap">
       <a href="index.html" class="logo">Himalayan<span> Horizons</span></a>
       <nav id="main-nav" aria-label="Primary navigation">
         <ul>
-          <li><a href="index.html"                   >Home</a></li>
-          <li><a href="destinations.html"            >Destinations</a></li>
-          <li><a href="gallery.html"                 >Gallery</a></li>
-          <li><a href="about.html"                   >About Us</a></li>
-          <li><a href="contact.html"    class="active">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -37,21 +38,19 @@
 
 
   <div class="page-hero">
-    <img class="page-hero-bg"
-         src="img2.jpg"
-         alt="Aerial view of the Kathmandu Valley with the city skyline and Himalayan mountains in the background" />
+    <img class="page-hero-bg" src="img2.jpg"
+      alt="Aerial view of the Kathmandu Valley with the city skyline and Himalayan mountains in the background" />
     <div class="page-hero-text">
       <h1>Contact Us</h1>
       <p>We'd love to hear from you — fill in the form and we'll reply within 24 hours.</p>
     </div>
   </div>
 
- 
+
   <section class="bg-white">
     <div class="container">
       <div class="contact-layout">
 
-        <!-- ===  LEFT: Contact Information  === -->
         <div class="c-info">
           <h3>Get In Touch</h3>
           <p>
@@ -75,7 +74,7 @@
             </div>
           </div>
 
-          
+
           <div class="c-item">
             <div class="c-icon">✉</div>
             <div class="c-detail">
@@ -93,43 +92,40 @@
             </div>
           </div>
 
-          <!-- External link with _blank target (requirement) -->
           <div class="c-item">
             <div class="c-icon">🗺</div>
             <div class="c-detail">
               <strong>Find Us on Google Maps</strong>
               <a href="https://www.google.com/maps/place/Thamel,+Kathmandu" target="_blank"
-                 title="Open Thamel, Kathmandu on Google Maps (opens in a new window)">
+                title="Open Thamel, Kathmandu on Google Maps (opens in a new window)">
                 View map of Thamel, Kathmandu
               </a>
             </div>
           </div>
 
           <div style="margin-top:28px;">
-            <p style="font-weight:700;color:var(--navy);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px;">
+            <p
+              style="font-weight:700;color:var(--navy);font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px;">
               Follow Us
             </p>
             <div style="display:flex;gap:12px;flex-wrap:wrap;">
-              <a href="https://www.facebook.com" target="_blank"
-                 title="Facebook (opens in new window)"
-                 class="btn btn-teal" style="padding:8px 18px;font-size:.82rem;">
+              <a href="https://www.facebook.com" target="_blank" title="Facebook (opens in new window)"
+                class="btn btn-teal" style="padding:8px 18px;font-size:.82rem;">
                 📘 Facebook
               </a>
-              <a href="https://www.instagram.com" target="_blank"
-                 title="Instagram (opens in new window)"
-                 class="btn btn-gold" style="padding:8px 18px;font-size:.82rem;">
+              <a href="https://www.instagram.com" target="_blank" title="Instagram (opens in new window)"
+                class="btn btn-gold" style="padding:8px 18px;font-size:.82rem;">
                 📷 Instagram
               </a>
-              <a href="https://www.tripadvisor.com" target="_blank"
-                 title="TripAdvisor (opens in new window)"
-                 class="btn btn-outline" style="padding:8px 18px;font-size:.82rem;color:var(--navy);border-color:var(--navy);">
+              <a href="https://www.tripadvisor.com" target="_blank" title="TripAdvisor (opens in new window)"
+                class="btn btn-outline"
+                style="padding:8px 18px;font-size:.82rem;color:var(--navy);border-color:var(--navy);">
                 ⭐ TripAdvisor
               </a>
             </div>
           </div>
         </div>
 
-        <!-- ===  RIGHT: Contact Form with JavaScript Validation  === -->
         <div class="c-form">
           <h3>Send Us a Message</h3>
           <p style="color:var(--text-mid);font-size:.92rem;margin-bottom:22px;">
@@ -138,28 +134,24 @@
 
           <form id="contact-form" novalidate>
 
-            <!-- Row 1: Name + Email -->
             <div class="form-row">
               <div class="fg">
                 <label for="name">Full Name <span class="req">*</span></label>
-                <input type="text" id="name" name="name" placeholder="e.g. Hari Prasad" required
-                       autocomplete="name" />
+                <input type="text" id="name" name="name" placeholder="e.g. Hari Prasad" required autocomplete="name" />
                 <span class="err-msg" role="alert"></span>
               </div>
               <div class="fg">
                 <label for="email">Email Address <span class="req">*</span></label>
                 <input type="email" id="email" name="email" placeholder="you@example.com" required
-                       autocomplete="email" />
+                  autocomplete="email" />
                 <span class="err-msg" role="alert"></span>
               </div>
             </div>
 
-            <!-- Row 2: Phone + Country -->
             <div class="form-row">
               <div class="fg">
                 <label for="phone">Phone / WhatsApp</label>
-                <input type="tel" id="phone" name="phone" placeholder="+977 98-XXXXXXXX"
-                       autocomplete="tel" />
+                <input type="tel" id="phone" name="phone" placeholder="+977 98-XXXXXXXX" autocomplete="tel" />
                 <span class="err-msg" role="alert"></span>
               </div>
               <div class="fg">
@@ -181,7 +173,6 @@
               </div>
             </div>
 
-            <!-- Trek of Interest -->
             <div class="fg">
               <label for="trek">Trek / Tour of Interest <span class="req">*</span></label>
               <select id="trek" name="trek" required>
@@ -204,7 +195,6 @@
               <span class="err-msg" role="alert"></span>
             </div>
 
-            <!-- Row 3: Travel Date + Group Size -->
             <div class="form-row">
               <div class="fg">
                 <label for="travel-date">Planned Travel Date <span class="req">*</span></label>
@@ -225,15 +215,13 @@
               </div>
             </div>
 
-            <!-- Message -->
             <div class="fg">
               <label for="message">Your Message <span class="req">*</span></label>
               <textarea id="message" name="message" required
-                        placeholder="Tell us about your experience level, any special requirements, dietary needs, or questions you have…"></textarea>
+                placeholder="Tell us about your experience level, any special requirements, dietary needs, or questions you have…"></textarea>
               <span class="err-msg" role="alert"></span>
             </div>
 
-            <!-- Hear about us -->
             <div class="fg">
               <label for="source">How did you hear about us?</label>
               <select id="source" name="source">
@@ -251,19 +239,18 @@
               Send Message ➜
             </button>
 
-            <!-- Success message (shown after successful submission) -->
             <div id="form-ok" class="form-ok" role="alert">
               ✅ <strong>Thank you!</strong> Your message has been sent. We'll reply to your email within 24 hours.
             </div>
 
           </form>
-        </div><!-- /.c-form -->
+        </div>
 
-      </div><!-- /.contact-layout -->
-    </div><!-- /.container -->
+      </div>
+    </div>
   </section>
 
-  
+
   <section class="bg-cream" id="faq">
     <div class="container">
       <div class="sec-head">
@@ -274,15 +261,18 @@
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
 
         <div style="background:var(--white);padding:28px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);">
-          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:10px;">Do I need experience to trek?</h4>
+          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:10px;">Do I need experience to
+            trek?</h4>
           <p style="color:var(--text-mid);font-size:.93rem;">
-            Many of our treks are suitable for fit beginners. Langtang Valley and Annapurna Base Camp are great starting points.
+            Many of our treks are suitable for fit beginners. Langtang Valley and Annapurna Base Camp are great starting
+            points.
             We always advise a good level of general fitness and some uphill walking practice before arrival.
           </p>
         </div>
 
         <div style="background:var(--white);padding:28px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);">
-          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:10px;">What is the best time to visit Nepal?</h4>
+          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:10px;">What is the best time to
+            visit Nepal?</h4>
           <p style="color:var(--text-mid);font-size:.93rem;">
             October–November and March–April are the best seasons for trekking —
             clear skies, stable temperatures, and spectacular mountain views.
@@ -291,7 +281,8 @@
         </div>
 
         <div style="background:var(--white);padding:28px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);">
-          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:10px;">Do I need travel insurance?</h4>
+          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:10px;">Do I need travel insurance?
+          </h4>
           <p style="color:var(--text-mid);font-size:.93rem;">
             Yes — travel insurance covering emergency helicopter evacuation is mandatory for all treks above 3,000 m.
             We can recommend reputable providers if needed.
@@ -299,7 +290,8 @@
         </div>
 
         <div style="background:var(--white);padding:28px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);">
-          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:10px;">How do I pay for my trek?</h4>
+          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:10px;">How do I pay for my trek?
+          </h4>
           <p style="color:var(--text-mid);font-size:.93rem;">
             We accept bank transfer, major credit cards, and cash in NPR or USD.
             A 25% deposit confirms your booking; the balance is due 30 days before departure.
@@ -311,13 +303,14 @@
     </div>
   </section>
 
- 
+
   <footer id="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="f-brand">
           <span class="logo-f">Himalayan Horizons</span>
-          <p>Nepal's most trusted trekking and travel company since 2005. We connect adventurers with the world's greatest mountain landscapes.</p>
+          <p>Nepal's most trusted trekking and travel company since 2005. We connect adventurers with the world's
+            greatest mountain landscapes.</p>
           <address>
             Thamel, Kathmandu 44600<br />
             Bagmati Province, Nepal<br />
@@ -359,7 +352,7 @@
       </div>
     </div>
 
-    
+
     <div class="container">
       <div class="sec-nav">
         <div class="sec-nav-links">
@@ -377,4 +370,5 @@
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
