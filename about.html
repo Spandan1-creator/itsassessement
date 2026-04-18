@@ -1,28 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Nepal - Home</title>
-
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Himalayan Horizons — Our Story</title>
+  <meta name="description" content="Learn about Himalayan Horizons — who we are, our experienced team of guides, and our commitment to responsible tourism in Nepal." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="destination.html">Destinations</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="sitemap.html">Sitemap</a>
-    </nav>
+  <!-- =====================================================
+       PERSISTENT NAVIGATION (identical on every page)
+       ===================================================== -->
+  <header id="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">Himalayan<span> Horizons</span></a>
+      <nav id="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html"                   >Home</a></li>
+          <li><a href="destinations.html"            >Destinations</a></li>
+          <li><a href="gallery.html"                 >Gallery</a></li>
+          <li><a href="about.html"      class="active">About Us</a></li>
+          <li><a href="contact.html"                 >Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <h1>About Us</h1>
-    <p>We provide the best travel experiences across Nepal.</p>
+  
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <strong>About Us</strong>
+    </div>
+  </div>
 
-    <footer><p>Travel Nepal</p></footer>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <img class="page-hero-bg"
+         src="https://picsum.photos/seed/about-hero/1400/450"
+         alt="Guide and trekkers looking out over a vast Himalayan valley bathed in morning light" />
+    <div class="page-hero-text">
+      <h1>About Himalayan Horizons</h1>
+      <p>A Nepalese family business with a passion for sharing our mountains with the world.</p>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       OUR STORY
+       ===================================================== -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="img1.jpg"
+               alt="The founding team of Himalayan Horizons posing in front of Everest Base Camp in 2005" />
+        </div>
+        <div class="about-txt">
+          <p class="sub">Est. 2005 · Kathmandu, Nepal</p>
+          <h2>Born in the Mountains</h2>
+          <p>
+            Himalayan Horizons was founded in 2005 by Pemba Sherpa and his family in Thamel, Kathmandu.
+            After two decades guiding international climbers on Everest and the Annapurna ranges,
+            Pemba wanted to create a company that went beyond logistics — one that shared
+            the true soul of Nepal with every visitor.
+          </p>
+          <p>
+            Today we are a team of 35 certified guides, trekking staff, and travel coordinators,
+            all born and raised in the communities we take you through. Our profits support
+            local schools, trail maintenance, and reforestation projects across the Khumbu valley.
+          </p>
+          <p>
+            We are proud members of the <strong>Trekking Agents Association of Nepal (TAAN)</strong>
+            and fully licensed by the <strong>Nepal Tourism Board</strong>.
+          </p>
+          <a href="contact.html" class="btn btn-gold mt-10">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-cream">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">What We Stand For</span>
+        <h2>Our Values</h2>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-body" style="padding:32px;">
+            <p style="font-size:2.2rem;margin-bottom:12px;">🧭</p>
+            <h3>Expert Local Knowledge</h3>
+            <p>Our guides have grown up on these trails. They speak the local languages, know the mountain weather, and carry deep respect for the land they guide you through.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="padding:32px;">
+            <p style="font-size:2.2rem;margin-bottom:12px;">🌱</p>
+            <h3>Responsible Tourism</h3>
+            <p>We follow strict Leave No Trace policies, pay all our staff fair wages above national minimum, and donate 5% of profits to Himalayan conservation projects each year.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="padding:32px;">
+            <p style="font-size:2.2rem;margin-bottom:12px;">🤝</p>
+            <h3>Community First</h3>
+            <p>We hire locally, eat locally, and shop locally. Every night you spend in a teahouse on our treks goes directly into the pockets of the family who owns it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="bg-white">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">The People Behind the Peaks</span>
+        <h2>Meet Our Team</h2>
+        <p>Every guide is NMA-certified, wilderness first-aid trained, and genuinely passionate about Nepal.</p>
+      </div>
+
+
+  <section class="bg-cream" id="sitemap">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">Navigation</span>
+        <h2>Site Map</h2>
+        <p>An overview of all pages on the Himalayan Horizons website.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:860px;margin:0 auto;">
+
+        <div style="background:var(--white);padding:24px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);">
+          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:12px;font-size:1rem;">🏠 Main Pages</h4>
+          <ul style="list-style:none;">
+            <li style="margin-bottom:7px;"><a href="index.html">→ Home (index.html)</a></li>
+            <li style="margin-bottom:7px;"><a href="destinations.html">→ Destinations</a></li>
+            <li style="margin-bottom:7px;"><a href="gallery.html">→ Gallery</a></li>
+            <li style="margin-bottom:7px;"><a href="about.html">→ About Us</a></li>
+            <li style="margin-bottom:7px;"><a href="contact.html">→ Contact</a></li>
+          </ul>
+        </div>
+
+        <div style="background:var(--white);padding:24px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);">
+          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:12px;font-size:1rem;">🔗 Page Sections</h4>
+          <ul style="list-style:none;">
+            <li style="margin-bottom:7px;"><a href="destinations.html#treks">→ Trekking Packages</a></li>
+            <li style="margin-bottom:7px;"><a href="destinations.html#tours">→ Cultural Tours</a></li>
+            <li style="margin-bottom:7px;"><a href="destinations.html#packages">→ Package Comparison</a></li>
+            <li style="margin-bottom:7px;"><a href="about.html#sitemap">→ Site Map</a></li>
+          </ul>
+        </div>
+
+        <div style="background:var(--white);padding:24px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);">
+          <h4 style="font-family:'Merriweather',serif;color:var(--navy);margin-bottom:12px;font-size:1rem;">📬 Contact & Links</h4>
+          <ul style="list-style:none;">
+            <li style="margin-bottom:7px;"><a href="contact.html">→ Contact Form</a></li>
+            <li style="margin-bottom:7px;"><a href="mailto:info@himalayanhorizons.com">→ Email Us</a></li>
+            <li style="margin-bottom:7px;"><a href="https://www.welcomenepal.com" target="_blank">→ Nepal Tourism Board ↗</a></li>
+            <li style="margin-bottom:7px;"><a href="https://www.instagram.com" target="_blank">→ Our Instagram ↗</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="bg-navy" style="padding:65px 0;">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">Our Favourite Resources</span>
+        <h2 style="color:var(--white);">Cool Sites We Love</h2>
+        <p style="color:var(--cream-dark);">Useful and inspiring destinations for any Nepal traveller — all open in a new window.</p>
+      </div>
+
+      <div class="ext-grid">
+
+        <div class="ext-card">
+          <h4>🏔 Nepal Tourism Board</h4>
+          <p>The official government tourism portal — visa info, travel advisories, and destination guides.</p>
+          <!-- External link with target="_blank" (requirement: blank target) -->
+          <a href="https://www.welcomenepal.com" target="_blank"
+             title="Visit Nepal Tourism Board website ">
+            Visit welcomenepal.com
+          </a>
+        </div>
+
+        <div class="ext-card">
+          <h4>🗺 Himalayan Map House</h4>
+          <p>The best trekking maps of Nepal, detailed topographic charts for every major route.</p>
+          <a href="https://www.himalayamaphouse.com" target="_blank"
+             title="Visit Himalayan Map House (opens in new window)">
+            Visit himalayamaphouse.com
+          </a>
+        </div>
+
+        <div class="ext-card">
+          <h4>🌍 UNESCO World Heritage</h4>
+          <p>Official UNESCO listings for Nepal's incredible World Heritage Sites including Lumbini and Kathmandu Valley.</p>
+          <a href="https://whc.unesco.org" target="_blank"
+             title="Visit UNESCO World Heritage (opens in new window)">
+            Visit whc.unesco.org
+          </a>
+        </div>
+
+        <div class="ext-card">
+          <h4>📰 The Himalayan Times</h4>
+          <p>Nepal's leading English-language newspaper — stay up to date with local news before and during your trip.</p>
+          <a href="https://thehimalayantimes.com" target="_blank"
+             title="Visit The Himalayan Times (opens in new window)">
+            Visit thehimalayantimes.com
+          </a>
+        </div>
+
+        <div class="ext-card">
+          <h4>🏥 CIWEC Travel Clinic</h4>
+          <p>Travel health and vaccination advice specifically for Nepal — altitude sickness, water, and food safety.</p>
+          <a href="https://ciwec-clinic.com" target="_blank"
+             title="Visit CIWEC Clinic (opens in new window)">
+            Visit ciwec-clinic.com
+          </a>
+        </div>
+
+        <div class="ext-card">
+          <h4>🌦 Nepal Weather Service</h4>
+          <p>Department of Hydrology and Meteorology — official Nepal weather forecasts and mountain conditions.</p>
+          <a href="https://www.dhm.gov.np" target="_blank"
+             title="Visit Nepal Department of Hydrology (opens in new window)">
+            Visit dhm.gov.np
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-brand">
+          <span class="logo-f">Himalayan Horizons</span>
+          <p>Nepal's most trusted trekking and travel company since 2005. We connect adventurers with the world's greatest mountain landscapes.</p>
+          <address>
+            Thamel, Kathmandu 44600<br />
+            Bagmati Province, Nepal<br />
+            Phone: +977 1 4234567
+          </address>
+          <a href="mailto:info@himalayanhorizons.com" class="email-link">
+            ✉ info@himalayanhorizons.com
+          </a>
+        </div>
+        <div class="f-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h4>Popular Treks</h4>
+          <ul>
+            <li><a href="destinations.html">Everest Base Camp</a></li>
+            <li><a href="destinations.html">Annapurna Circuit</a></li>
+            <li><a href="destinations.html">Langtang Valley</a></li>
+            <li><a href="destinations.html">Gokyo Lakes</a></li>
+            <li><a href="destinations.html">Manaslu Circuit</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="https://www.welcomenepal.com" target="_blank">Nepal Tourism Board</a></li>
+            <li><a href="https://www.taan.org.np" target="_blank">Trekking Agents Assoc.</a></li>
+            <li><a href="https://www.whc.unesco.org" target="_blank">UNESCO Heritage Sites</a></li>
+            <li><a href="https://www.immigration.gov.np" target="_blank">Nepal Immigration</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     
+    <div class="container">
+      <div class="sec-nav">
+        <div class="sec-nav-links">
+          <a href="index.html">Home</a><span class="pipe">|</span>
+          <a href="destinations.html">Destinations</a><span class="pipe">|</span>
+          <a href="gallery.html">Gallery</a><span class="pipe">|</span>
+          <a href="about.html">About Us</a><span class="pipe">|</span>
+          <a href="contact.html">Contact</a><span class="pipe">|</span>
+          <a href="mailto:info@himalayanhorizons.com">Email Us</a>
+        </div>
+        <p class="copy">&copy; 2026 Himalayan Horizons. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

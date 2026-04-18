@@ -1,44 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Nepal - Home</title>
-
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Himalayan Horizons — Explore Nepal</title>
+  <meta name="description" content="Himalayan Horizons – premium trekking and travel experiences across Nepal's most breathtaking landscapes." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+ 
+  <!-- =====================================================
+       PERSISTENT NAVIGATION  (identical on every page)
+       ===================================================== -->
+  <header id="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">Himalayan<span> Horizons</span></a>
+      <nav id="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html"        class="active">Home</a></li>
+          <li><a href="destinations.html"            >Destinations</a></li>
+          <li><a href="gallery.html"                 >Gallery</a></li>
+          <li><a href="about.html"                   >About Us</a></li>
+          <li><a href="contact.html"                 >Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <!-- =====================================================
+       HERO IMAGE SLIDER  (requirement: image slider in banner)
+       ===================================================== -->
+  <section class="slider" aria-label="Featured destinations">
+ 
+    <!-- Slide 1 -->
+    <div class="slide">
+      <img class="slide-bg"
+           src="https://picsum.photos/seed/everest/1400/600"
+           alt="Everest Base Camp – snow-capped Himalayan peaks under a clear blue sky" />
+      <div class="slide-text">
+        <span class="badge">⭐ Most Popular Trek</span>
+        <h1>Everest Base Camp</h1>
+        <p>Trek to the foot of the world's highest mountain — an adventure of a lifetime awaits you.</p>
+        <a href="destinations.html" class="btn btn-gold">Explore Trek</a>
+        &nbsp;
+        <a href="contact.html" class="btn btn-outline">Book Now</a>
+      </div>
+    </div>
+ 
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img class="slide-bg"
+           src=""
+           alt="Annapurna Circuit – lush valleys and dramatic mountain ridgelines at sunset" />
+      <div class="slide-text">
+        <span class="badge">🏔 Classic Route</span>
+        <h1>Annapurna Circuit</h1>
+        <p>Journey through diverse landscapes, ancient villages, and high mountain passes.</p>
+        <a href="destinations.html" class="btn btn-gold">Learn More</a>
+        &nbsp;
+        <a href="contact.html" class="btn btn-outline">Book Now</a>
+      </div>
+    </div>
+ 
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img class="slide-bg"
+           src=""
+           alt="Kathmandu Valley – historic temples and vibrant streets of Nepal's capital" />
+      <div class="slide-text">
+        <span class="badge">🏛 Cultural Experience</span>
+        <h1>Kathmandu Valley</h1>
+        <p>Discover ancient temples, sacred stupas, and the vibrant culture of Nepal's capital.</p>
+        <a href="destinations.html" class="btn btn-gold">Discover More</a>
+        &nbsp;
+        <a href="contact.html" class="btn btn-outline">Book Now</a>
+      </div>
+    </div>
+ 
+    <!-- Slide 4 -->
+    <div class="slide">
+      <img class="slide-bg"
+           src=""
+           alt="Chitwan National Park – lush jungle with exotic wildlife and the Rapti River" />
+      <div class="slide-text">
+        <span class="badge">🌿 Wildlife Safari</span>
+        <h1>Chitwan National Park</h1>
+        <p>Encounter rhinos, tigers, and elephants in one of Asia's finest wildlife reserves.</p>
+        <a href="destinations.html" class="btn btn-gold">Explore Park</a>
+        &nbsp;
+        <a href="contact.html" class="btn btn-outline">Book Now</a>
+      </div>
+    </div>
+ 
+    <!-- Slider controls -->
+    <button class="arrow prev" aria-label="Previous slide">&#8249;</button>
+    <button class="arrow next" aria-label="Next slide">&#8250;</button>
+ 
+    <div class="slider-dots" role="group" aria-label="Slide navigation">
+      <button class="dot active" aria-label="Go to slide 1"></button>
+      <button class="dot" aria-label="Go to slide 2"></button>
+      <button class="dot" aria-label="Go to slide 3"></button>
+      <button class="dot" aria-label="Go to slide 4"></button>
+    </div>
+  </section>
+ 
+ 
+  <section class="bg-cream">
+    <div class="container text-center">
+      <div class="sec-head">
+        <span class="sub">Welcome to Nepal</span>
+        <h2>Your Gateway to the Himalayas</h2>
+        <p>Himalayan Horizons has been crafting unforgettable Nepal travel experiences since 2005. Whether you seek high-altitude adventure or serene cultural discovery, we have the perfect journey for you.</p>
+      </div>
+      <a href="about.html" class="btn btn-teal">Our Story</a>
+      &nbsp;&nbsp;
+      <a href="destinations.html" class="btn btn-gold">View All Destinations</a>
+    </div>
+  </section>
+ 
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="destination.html">Destinations</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="sitemap.html">Sitemap</a>
-    </nav>
-
-    <header class="slider">
-        <img src="banner1.jpg" alt="Travel Banner" id="slide">
-        <h1>Explore Nepal</h1>
-        <p>Your adventure starts here</p>
-    </header>
-
-    <section>
-        <h2>Popular Destinations</h2>
-        <div class="cards">
-            <div class="card">Kathmandu</div>
-            <div class="card">Pokhara</div>
-            <div class="card">Evereset</div>
+  <section class="bg-white">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">Top Picks</span>
+        <h2>Featured Destinations</h2>
+        <p>Explore our most loved trekking routes and cultural tours across Nepal.</p>
+      </div>
+ 
+      <div class="cards">
+ 
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-img">
+            <img src="img1.jpg"
+                 alt="Everest Base Camp trekkers walking through a high-altitude moraine landscape" />
+          </div>
+          <div class="card-body">
+            <p class="tag">🏔 Trekking</p>
+            <h3>Everest Base Camp</h3>
+            <p>Follow the footsteps of legends on this iconic 14-day trek to 5,364 m base camp. Stunning scenery and Sherpa culture await.</p>
+          </div>
+          <div class="card-foot">
+            <div class="price">NPR 85,000 <small>/ person</small></div>
+            <a href="destinations.html" class="btn btn-teal">Details</a>
+          </div>
         </div>
-    </section>
+ 
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-img">
+            <img src="img3.jpg"
+                 alt="Phewa Lake in Pokhara with the Annapurna mountain range reflected in calm waters" />
+          </div>
+          <div class="card-body">
+            <p class="tag">🌊 Lakes & Mountains</p>
+            <h3>Pokhara & Annapurna</h3>
+            <p>Start from Nepal's most beautiful lakeside city and trek through rhododendron forests to Annapurna Base Camp at 4,130 m.</p>
+          </div>
+          <div class="card-foot">
+            <div class="price">NPR 65,000 <small>/ person</small></div>
+            <a href="destinations.html" class="btn btn-teal">Details</a>
+          </div>
+        </div>
+ 
+ 
+      </div><!-- /.cards -->
+    </div><!-- /.container -->
+  </section>
+ 
 
-    <footer>
-        <p>Travel Nepal  |  info@travelnepal.com</p>
-        <a href="mailto:info@travelnepal.com">Email Us</a>
-        <a href="https://www.lonelyplanet.com" target="_blank">Travel Guide</a>
-    </footer>
-    
+  <div class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat">
+          <h3>5,000+</h3>
+          <p>Happy Travellers</p>
+        </div>
+        <div class="stat">
+          <h3>20+</h3>
+          <p>Trek Packages</p>
+        </div>
+        <div class="stat">
+          <h3>18</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="stat">
+          <h3>100%</h3>
+          <p>Safety Record</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <section class="bg-cream">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">Why Us?</span>
+        <h2>Travel With Confidence</h2>
+        <p>We combine local expertise with international standards so every trip is safe, enriching, and memorable.</p>
+      </div>
+ 
+      <div class="cards">
+        <div class="card">
+          <div class="card-body" style="padding:30px;">
+            <p style="font-size:2.5rem;margin-bottom:10px;">🧭</p>
+            <h3>Expert Local Guides</h3>
+            <p>All our guides are certified, English-speaking locals with years of mountain experience. They know every trail like the back of their hand.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="padding:30px;">
+            <p style="font-size:2.5rem;margin-bottom:10px;">🛡️</p>
+            <h3>Safety First</h3>
+            <p>We carry full first-aid kits, maintain radio contact at altitude, and have emergency evacuation plans for every trek we run.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="padding:30px;">
+            <p style="font-size:2.5rem;margin-bottom:10px;">🌱</p>
+            <h3>Responsible Tourism</h3>
+            <p>We follow Leave No Trace principles, support local communities, and offset carbon for every trip. Travel well, tread lightly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <section class="bg-white">
+    <div class="container text-center">
+      <div class="sec-head">
+        <span class="sub">Photo Gallery</span>
+        <h2>See Nepal Through Our Lens</h2>
+        <p>Browse stunning images from our treks and tours captured by our travellers and guides.</p>
+      </div>
+ 
+      
+      <div class="cards mb-20">
+        <div class="card">
+          <div class="card-img" style="height:240px;">
+            <img src="https://picsum.photos/seed/np1/600/400"
+                 alt="A sunrise view over snow-capped Himalayan peaks from a high ridge" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" style="height:240px;">
+            <img src="https://picsum.photos/seed/np2/600/400"
+                 alt="Colorful prayer flags strung across a mountain pass in Nepal" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" style="height:240px;">
+            <img src="https://picsum.photos/seed/np3/600/400"
+                 alt="A traditional Nepalese teahouse nestled among pine trees on a trekking route" />
+          </div>
+        </div>
+      </div>
+ 
+      <a href="gallery.html" class="btn btn-gold">View Full Gallery</a>
+    </div>
+  </section>
+ 
+
+  <section class="stats" style="padding:70px 0;">
+    <div class="container text-center">
+      <h2 style="font-family:'Merriweather',serif;color:var(--white);font-size:2rem;margin-bottom:16px;">
+        Ready to Start Your Adventure?
+      </h2>
+      <p style="color:var(--cream-dark);margin-bottom:32px;max-width:540px;margin-left:auto;margin-right:auto;">
+        Our team is here to help you plan the perfect Nepal experience. Get in touch today — no obligation, just good conversation.
+      </p>
+      <a href="contact.html" class="btn btn-gold">Contact Us</a>
+      &nbsp;&nbsp;
+      <a href="mailto:info@himalayanhorizons.com" class="btn btn-outline">
+        ✉ Email Us Directly
+      </a>
+    </div>
+  </section>
+ 
+ 
+  <footer id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+ 
+        <!-- Brand -->
+        <div class="f-brand">
+          <span class="logo-f">Himalayan Horizons</span>
+          <p>Nepal's most trusted trekking and travel company since 2005. We connect adventurers with the world's greatest mountain landscapes.</p>
+          <address>
+            Thamel, Kathmandu 44600<br />
+            Bagmati Province, Nepal<br />
+            Phone: +977 1 4234567
+          </address>
+          <a href="mailto:info@himalayanhorizons.com" class="email-link">
+            ✉ info@himalayanhorizons.com
+          </a>
+        </div>
+ 
+        <!-- Quick Links -->
+        <div class="f-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+ 
+        <!-- Popular Treks -->
+        <div class="f-col">
+          <h4>Popular Treks</h4>
+          <ul>
+            <li><a href="destinations.html">Everest Base Camp</a></li>
+            <li><a href="destinations.html">Annapurna Circuit</a></li>
+            <li><a href="destinations.html">Langtang Valley</a></li>
+            <li><a href="destinations.html">Gokyo Lakes</a></li>
+            <li><a href="destinations.html">Manaslu Circuit</a></li>
+          </ul>
+        </div>
+ 
+        <!-- Useful External Sites -->
+        <div class="f-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li>
+              <a href="https://www.welcomenepal.com" target="_blank"
+                 title="Nepal Tourism Board (opens in new window)">Nepal Tourism Board</a>
+            </li>
+            <li>
+              <a href="https://www.taan.org.np" target="_blank"
+                 title="Trekking Agents Association (opens in new window)">Trekking Agents Assoc.</a>
+            </li>
+            <li>
+              <a href="https://www.whc.unesco.org" target="_blank"
+                 title="UNESCO World Heritage (opens in new window)">UNESCO Heritage Sites</a>
+            </li>
+            <li>
+              <a href="https://www.immigration.gov.np" target="_blank"
+                 title="Nepal Immigration (opens in new window)">Nepal Immigration</a>
+            </li>
+          </ul>
+        </div>
+ 
+      </div><!-- /.footer-grid -->
+    </div><!-- /.container -->
+ 
+    <!-- ===  SECONDARY TEXT-ONLY NAVIGATION  (requirement) === -->
+    <div class="container">
+      <div class="sec-nav">
+        <div class="sec-nav-links">
+          <a href="index.html">Home</a>
+          <span class="pipe">|</span>
+          <a href="destinations.html">Destinations</a>
+          <span class="pipe">|</span>
+          <a href="gallery.html">Gallery</a>
+          <span class="pipe">|</span>
+          <a href="about.html">About Us</a>
+          <span class="pipe">|</span>
+          <a href="contact.html">Contact</a>
+          <span class="pipe">|</span>
+          <a href="mailto:info@himalayanhorizons.com">Email Us</a>
+        </div>
+        <p class="copy">&copy; 2026 Himalayan Horizons. All rights reserved.</p>
+      </div>
+    </div>
+ 
+  </footer>
+ 
+  <script src="js/script.js"></script>
 </body>
 </html>

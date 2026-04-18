@@ -1,32 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Himalayan Horizons — Nepal Photography</title>
+  <meta name="description" content="Browse stunning photographs from Nepal's Himalayan treks, temples, and wildlife — captured by our guides and travellers." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="destination.html">Destinations</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="sitemap.html">Sitemap</a>
-    </nav>
+  <!-- =====================================================
+       PERSISTENT NAVIGATION (identical on every page)
+       ===================================================== -->
+  <header id="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">Himalayan<span> Horizons</span></a>
+      <nav id="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html"                   >Home</a></li>
+          <li><a href="destinations.html"            >Destinations</a></li>
+          <li><a href="gallery.html"    class="active">Gallery</a></li>
+          <li><a href="about.html"                   >About Us</a></li>
+          <li><a href="contact.html"                 >Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <h1>Gallery</h1>
-    <div class="gallery">
-        <a href="img1.jpg" target="_blank"><img src="img1.jpg" alt="image"></a>
-        <a href="img2.jpg" target="_blank"><img src="img2.jpg" alt="image"></a>
-        <a href="img3.jpg" target="_blank"><img src="img3.jpg" alt="image"></a>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <strong>Gallery</strong>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <img class="page-hero-bg"
+         src="https://picsum.photos/seed/gallery-hero/1400/450"
+         alt="Sweeping aerial view of Nepal's Himalayan landscapes, green valleys below snowy peaks" />
+    <div class="page-hero-text">
+      <h1>Photo Gallery</h1>
+      <p>Nepal through the eyes of our travellers — click any photo to view full size.</p>
+    </div>
+  </div>
+
+
+  <section class="bg-white">
+    <div class="container">
+
+      <div class="sec-head">
+        <span class="sub">Our Photography</span>
+        <h2>Moments from the Mountains</h2>
+        <p>Click any thumbnail to open the full-size image. Use Esc or the × button to close.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Photo 1 -->
+        <!-- The thumbnail (small image) is a link to the larger image -->
+        <a class="g-thumb"
+           href="img1.jpg"
+           data-caption="Sunrise over the Khumbu Glacier — Everest Base Camp trek"
+           aria-label="View full size: Sunrise over the Khumbu Glacier">
+          <img src="img1.jpg"
+               alt="Brilliant golden sunrise illuminating the Khumbu Glacier below Everest's south face" />
+          <div class="g-overlay">
+            <span class="icon">🔍</span>
+            <p>Khumbu Glacier Sunrise</p>
+          </div>
+        </a>
+
+        <!-- Photo 2 -->
+        <a class="g-thumb"
+           href="img1.jpg"
+           data-caption="Colourful prayer flags strung across Thorong La Pass, Annapurna"
+           aria-label="View full size: Prayer flags at Thorong La Pass">
+          <img src="img2.jpg"
+               alt="Hundreds of colourful Tibetan prayer flags blowing in the wind at high altitude Thorong La Pass" />
+          <div class="g-overlay">
+            <span class="icon">🔍</span>
+            <p>Thorong La Prayer Flags</p>
+          </div>
+        </a>
+
+        <!-- Photo 3 -->
+        <a class="g-thumb"
+           href="img2.jpg"
+           data-caption="Boudhanath Stupa at dusk, Kathmandu — a UNESCO World Heritage Site"
+           aria-label="View full size: Boudhanath Stupa at dusk">
+          <img src="img2.jpg"
+               alt="The great dome of Boudhanath Stupa lit with warm golden light as the sky turns purple at dusk" />
+          <div class="g-overlay">
+            <span class="icon">🔍</span>
+            <p>Boudhanath Stupa, Kathmandu</p>
+          </div>
+        </a>
+
+      </div><!-- /.gallery-grid -->
+
+      <!-- Instruction text -->
+      <p class="text-center mt-20" style="color:var(--text-mid);font-size:.9rem;font-style:italic;">
+        All photographs &copy; Himalayan Horizons and respective photographers. Not for reproduction without permission.
+      </p>
+
+      <div class="text-center mt-40">
+        <a href="contact.html" class="btn btn-gold">Plan Your Trip</a>
+        &nbsp;&nbsp;
+        <a href="destinations.html" class="btn btn-teal">View Trek Packages</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SUBMIT YOUR PHOTO (external links section)
+       ===================================================== -->
+  <section class="bg-navy" style="padding:60px 0;">
+    <div class="container text-center">
+      <h2 style="font-family:'Merriweather',serif;color:var(--white);margin-bottom:14px;">Share Your Nepal Adventure</h2>
+      <p style="color:var(--cream-dark);max-width:520px;margin:0 auto 32px;">
+        Have great shots from your trip with us? Tag us on social media or send your photos directly —
+        we'd love to feature them in our gallery!
+      </p>
+      <!-- External link with _blank target (requirement) -->
+      <a href="https://www.instagram.com" target="_blank"
+         title="Visit Instagram (opens in a new window)"
+         class="btn btn-gold">
+        📷 Visit Our Instagram
+      </a>
+      &nbsp;&nbsp;
+      <a href="mailto:photos@himalayanhorizons.com" class="btn btn-outline">
+        ✉ Submit Your Photo
+      </a>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER  (identical on every page)
+       ===================================================== -->
+  <footer id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-brand">
+          <span class="logo-f">Himalayan Horizons</span>
+          <p>Nepal's most trusted trekking and travel company since 2005. We connect adventurers with the world's greatest mountain landscapes.</p>
+          <address>
+            Thamel, Kathmandu 44600<br />
+            Bagmati Province, Nepal<br />
+            Phone: +977 1 4234567
+          </address>
+          <a href="mailto:info@himalayanhorizons.com" class="email-link">
+            ✉ info@himalayanhorizons.com
+          </a>
+        </div>
+        <div class="f-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h4>Popular Treks</h4>
+          <ul>
+            <li><a href="destinations.html">Everest Base Camp</a></li>
+            <li><a href="destinations.html">Annapurna Circuit</a></li>
+            <li><a href="destinations.html">Langtang Valley</a></li>
+            <li><a href="destinations.html">Gokyo Lakes</a></li>
+            <li><a href="destinations.html">Manaslu Circuit</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="https://www.welcomenepal.com" target="_blank">Nepal Tourism Board</a></li>
+            <li><a href="https://www.taan.org.np" target="_blank">Trekking Agents Assoc.</a></li>
+            <li><a href="https://www.whc.unesco.org" target="_blank">UNESCO Heritage Sites</a></li>
+            <li><a href="https://www.immigration.gov.np" target="_blank">Nepal Immigration</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <footer><p>Travel Nepal</p></footer>
-    
+    <!-- Secondary text-only navigation -->
+    <div class="container">
+      <div class="sec-nav">
+        <div class="sec-nav-links">
+          <a href="index.html">Home</a><span class="pipe">|</span>
+          <a href="destinations.html">Destinations</a><span class="pipe">|</span>
+          <a href="gallery.html">Gallery</a><span class="pipe">|</span>
+          <a href="about.html">About Us</a><span class="pipe">|</span>
+          <a href="contact.html">Contact</a><span class="pipe">|</span>
+          <a href="mailto:info@himalayanhorizons.com">Email Us</a>
+        </div>
+        <p class="copy">&copy; 2026 Himalayan Horizons. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       LIGHTBOX  (requirement: thumbnails link to larger images)
+       ===================================================== -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lb-close" aria-label="Close image viewer">&times;</button>
+    <img id="lb-img" src="" alt="" />
+    <p id="lb-caption"></p>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

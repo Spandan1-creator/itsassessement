@@ -1,51 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations</title>
-
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations | Himalayan Horizons — Nepal Trek Packages</title>
+  <meta name="description" content="Browse all Nepal trekking and tour packages offered by Himalayan Horizons. Compare prices, difficulty, and duration." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="destination.html">Destinations</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="sitemap.html">Sitemap</a>
-    </nav>
+  <!-- =====================================================
+       PERSISTENT NAVIGATION (identical on every page)
+       ===================================================== -->
+  <header id="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">Himalayan<span> Horizons</span></a>
+      <nav id="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html"                   >Home</a></li>
+          <li><a href="destinations.html" class="active">Destinations</a></li>
+          <li><a href="gallery.html"                 >Gallery</a></li>
+          <li><a href="about.html"                   >About Us</a></li>
+          <li><a href="contact.html"                 >Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <h1>Destinations</h1>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <strong>Destinations</strong>
+    </div>
+  </div>
 
-    <table border="1">
-        <tr>
-            <th rowspan="2">Place</th>
-            <th colspan="2">Details</th>
-        </tr>
+  
+  <div class="page-hero">
+    <img class="page-hero-bg"
+         src="img3.jpg"
+         alt="Beautiful Lakeside of Pokhara" />
+    <div class="page-hero-text">
+      <h1>Our Destinations</h1>
+      <p>Compare treks, choose your adventure, and let us handle the rest.</p>
+    </div>
+  </div>
 
-        <tr>
-            <th>Best Time</th>
-            <th>Activities</th>
-        </tr>
 
-        <tr>
-            <td>Kathmandu</td>
-            <td>All Year</td>
-            <td>Temples</td>
-        </tr>
+  <section class="bg-cream" style="padding:20px 0;">
+    <div class="container">
+      <nav aria-label="Section navigation" style="display:flex;gap:10px;flex-wrap:wrap;">
+        <strong style="margin-right:6px;color:var(--text-mid);font-size:.85rem;align-self:center;">Jump to:</strong>
+        <a href="#treks"    class="btn btn-teal"    style="padding:6px 16px;font-size:.8rem;">🏔 Trekking</a>
+        <a href="#tours"    class="btn btn-gold"    style="padding:6px 16px;font-size:.8rem;">🏛 Cultural Tours</a>
+        <a href="#packages" class="btn btn-outline"
+           style="padding:6px 16px;font-size:.8rem;color:var(--navy);border-color:var(--navy);">📦 Package Comparison</a>
+      </nav>
+    </div>
+  </section>
 
-        <tr>
-            <td>Pokhara</td>
-            <td>Sept-Nov</td>
-            <td>Boating</td>
-        </tr>
-    </table>
+  <section id="treks" class="bg-white">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">Adventure Awaits</span>
+        <h2>Trekking Packages</h2>
+        <p>All prices are per person and include guide, accommodation, and permits.</p>
+      </div>
 
-    <footer><p>Travel Nepal</p></footer>
+      <div class="tbl-wrap">
+        <table class="styled" summary="Trekking packages with duration, difficulty, and pricing information">
+          <caption style="caption-side:top;text-align:left;padding:12px 0;font-weight:700;color:var(--navy);font-size:1.05rem;">
+            🏔 Himalayan Trekking Packages 2026
+          </caption>
+          <thead>
+            <tr>
+              <th rowspan="2">Trek Name</th>        <!-- rowspan: merges 2 rows -->
+              <th rowspan="2">Region</th>
+              <th colspan="2">Duration</th>         <!-- colspan: merges 2 columns -->
+              <th rowspan="2">Max Altitude</th>
+              <th colspan="2">Price (NPR)</th>      <!-- colspan: merges 2 columns -->
+              <th rowspan="2">Difficulty</th>
+              <th rowspan="2">Status</th>
+            </tr>
+            <tr>
+              
+              <th style="font-size:.8rem;background:#1a2e44;">Days</th>
+              <th style="font-size:.8rem;background:#1a2e44;">Nights</th>
+              <th style="font-size:.8rem;background:#1a2e44;">Solo</th>
+              <th style="font-size:.8rem;background:#1a2e44;">Group</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Everest Base Camp</strong></td>
+              <td>Khumbu, Solukhumbu</td>
+              <td class="text-center">14</td>
+              <td class="text-center">13</td>
+              <td>5,364 m</td>
+              <td class="text-center">85,000</td>
+              <td class="text-center">72,000</td>
+              <td><span class="badge badge-y">Challenging</span></td>
+              <td><span class="badge badge-g">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Annapurna Base Camp</strong></td>
+              <td>Gandaki Province</td>
+              <td class="text-center">11</td>
+              <td class="text-center">10</td>
+              <td>4,130 m</td>
+              <td class="text-center">65,000</td>
+              <td class="text-center">55,000</td>
+              <td><span class="badge badge-y">Moderate</span></td>
+              <td><span class="badge badge-g">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Annapurna Circuit</strong></td>
+              <td>Gandaki Province</td>
+              <td class="text-center">18</td>
+              <td class="text-center">17</td>
+              <td>5,416 m</td>
+              <td class="text-center">95,000</td>
+              <td class="text-center">80,000</td>
+              <td><span class="badge badge-y">Challenging</span></td>
+              <td><span class="badge badge-g">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Langtang Valley</strong></td>
+              <td>Bagmati Province</td>
+              <td class="text-center">8</td>
+              <td class="text-center">7</td>
+              <td>3,870 m</td>
+              <td class="text-center">42,000</td>
+              <td class="text-center">35,000</td>
+              <td><span class="badge badge-b">Easy–Moderate</span></td>
+              <td><span class="badge badge-g">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Manaslu Circuit</strong></td>
+              <td>Gandaki Province</td>
+              <td class="text-center">16</td>
+              <td class="text-center">15</td>
+              <td>5,160 m</td>
+              <td class="text-center">110,000</td>
+              <td class="text-center">92,000</td>
+              <td><span class="badge badge-y">Challenging</span></td>
+              <td><span class="badge badge-b">Limited Spots</span></td>
+            </tr>
+            <tr>
+              <td><strong>Gokyo Lakes</strong></td>
+              <td>Khumbu, Solukhumbu</td>
+              <td class="text-center">12</td>
+              <td class="text-center">11</td>
+              <td>5,357 m</td>
+              <td class="text-center">78,000</td>
+              <td class="text-center">66,000</td>
+              <td><span class="badge badge-y">Challenging</span></td>
+              <td><span class="badge badge-g">Available</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="9" style="font-size:.82rem;color:var(--text-mid);font-weight:400;">
+                * All prices inclusive of guide salary, teahouse accommodation, trekking permits, and TIMS card. Flights/transport not included.
+                Group rate applies for 4+ persons.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="tours" class="bg-cream">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">Culture & Heritage</span>
+        <h2>Cultural Tour Packages</h2>
+        <p>Explore Nepal's UNESCO World Heritage Sites and rich spiritual traditions.</p>
+      </div>
+
+      <div class="tbl-wrap">
+        <table class="styled" summary="Cultural tour packages in Nepal with itinerary details">
+          <caption style="caption-side:top;text-align:left;padding:12px 0;font-weight:700;color:var(--navy);font-size:1.05rem;">
+            🏛 Cultural & Heritage Tours 2026
+          </caption>
+          <thead>
+            <tr>
+              <th>Tour Name</th>
+              <th>Duration</th>
+              <th>Key Sites Visited</th>          
+              <th>Price (NPR)</th>
+              <th>Best Season</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Kathmandu Valley Heritage</strong></td>
+              <td>4 Days / 3 Nights</td>
+              
+              <td>
+                <table class="nested" summary="Sites visited on the Kathmandu Valley Heritage tour">
+                  <thead>
+                    <tr><th>Site</th><th>Type</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Pashupatinath Temple</td><td>Hindu Temple</td></tr>
+                    <tr><td>Boudhanath Stupa</td><td>Buddhist Stupa</td></tr>
+                    <tr><td>Swayambhunath</td><td>Monkey Temple</td></tr>
+                    <tr><td>Patan Durbar Square</td><td>Royal Square</td></tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>28,000</td>
+              <td>Year-round</td>
+              <td><span class="badge badge-g">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Lumbini Pilgrimage</strong></td>
+              <td>3 Days / 2 Nights</td>
+              <td>
+                <table class="nested" summary="Sites visited on the Lumbini Pilgrimage tour">
+                  <thead>
+                    <tr><th>Site</th><th>Significance</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Maya Devi Temple</td><td>Birthplace of Buddha</td></tr>
+                    <tr><td>Sacred Garden</td><td>UNESCO Heritage</td></tr>
+                    <tr><td>Ashoka Pillar</td><td>3rd Century BC</td></tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>22,000</td>
+              <td>Oct – Mar</td>
+              <td><span class="badge badge-g">Available</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mustang Kingdom</strong></td>
+              <td>10 Days / 9 Nights</td>
+              <td>
+                <table class="nested" summary="Sites visited on the Mustang Kingdom tour">
+                  <thead>
+                    <tr><th>Location</th><th>Highlight</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Lo Manthang</td><td>Walled medieval city</td></tr>
+                    <tr><td>Chosar Cave</td><td>Ancient cave monastery</td></tr>
+                    <tr><td>Drikung Kagyü</td><td>Sacred monastery</td></tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>120,000</td>
+              <td>May – Oct</td>
+              <td><span class="badge badge-b">Restricted Area Permit Required</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="packages" class="bg-white">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sub">What's Included?</span>
+        <h2>Package Comparison</h2>
+        <p>See exactly what each package tier includes before you book.</p>
+      </div>
+
+      <div class="tbl-wrap">
+        <table class="styled" summary="Comparison of included features across Basic, Standard, and Premium packages">
+          <thead>
+            <tr>
+              <th rowspan="2" style="width:220px;">Feature</th>
+              <th colspan="3" style="text-align:center;">Package Tier</th>
+            </tr>
+            <tr>
+              <th style="background:#1a3a2a;text-align:center;">🌿 Basic</th>
+              <th style="background:#1a2e44;text-align:center;">⭐ Standard</th>
+              <th style="background:#4a2000;text-align:center;">👑 Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Price Range (NPR)</strong></td>
+              <td style="text-align:center;">25,000 – 45,000</td>
+              <td style="text-align:center;">45,000 – 85,000</td>
+              <td style="text-align:center;">85,000 – 150,000</td>
+            </tr>
+            <tr>
+              <td><strong>Certified Guide</strong></td>
+              <td style="text-align:center;">✅ Shared</td>
+              <td style="text-align:center;">✅ Private</td>
+              <td style="text-align:center;">✅ Senior Guide</td>
+            </tr>
+            <tr>
+              <td><strong>Accommodation</strong></td>
+              <td style="text-align:center;">Teahouse (shared)</td>
+              <td style="text-align:center;">Teahouse (private)</td>
+              <td style="text-align:center;">Lodge / Hotel</td>
+            </tr>
+            <tr>
+              <td><strong>Meals</strong></td>
+              <td style="text-align:center;">Breakfast only</td>
+              <td style="text-align:center;">Breakfast + Dinner</td>
+              <td style="text-align:center;">Full board (3 meals)</td>
+            </tr>
+            <tr>
+              <td><strong>Porter Service</strong></td>
+              <td style="text-align:center;">❌</td>
+              <td style="text-align:center;">✅ Shared</td>
+              <td style="text-align:center;">✅ Dedicated</td>
+            </tr>
+            <tr>
+              <td><strong>Emergency Evacuation Insurance</strong></td>
+              <td style="text-align:center;">❌</td>
+              <td style="text-align:center;">✅</td>
+              <td style="text-align:center;">✅</td>
+            </tr>
+            <tr>
+              <td><strong>Satellite Phone</strong></td>
+              <td style="text-align:center;">❌</td>
+              <td style="text-align:center;">❌</td>
+              <td style="text-align:center;">✅</td>
+            </tr>
+            <tr>
+              <td><strong>Airport Transfers</strong></td>
+              <td style="text-align:center;">❌</td>
+              <td style="text-align:center;">✅</td>
+              <td style="text-align:center;">✅ Private car</td>
+            </tr>
+            <tr>
+              <td><strong>Group Size</strong></td>
+              <td style="text-align:center;">Up to 12</td>
+              <td style="text-align:center;">Up to 8</td>
+              <td style="text-align:center;">Up to 4</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4" style="font-size:.82rem;color:var(--text-mid);font-weight:400;">
+                All packages include: national park fees, TIMS card, first-aid kit, and 24/7 office support.
+                Contact us to create a custom package for your group.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="text-center mt-40">
+        <a href="contact.html" class="btn btn-gold">Book a Package</a>
+        &nbsp;&nbsp;
+        <a href="gallery.html" class="btn btn-teal">See Photo Gallery</a>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-brand">
+          <span class="logo-f">Himalayan Horizons</span>
+          <p>Nepal's most trusted trekking and travel company since 2005. We connect adventurers with the world's greatest mountain landscapes.</p>
+          <address>
+            Thamel, Kathmandu 44600<br />
+            Bagmati Province, Nepal<br />
+            Phone: +977 1 4234567
+          </address>
+          <a href="mailto:info@himalayanhorizons.com" class="email-link">
+            ✉ info@himalayanhorizons.com
+          </a>
+        </div>
+        <div class="f-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h4>Popular Treks</h4>
+          <ul>
+            <li><a href="destinations.html">Everest Base Camp</a></li>
+            <li><a href="destinations.html">Annapurna Circuit</a></li>
+            <li><a href="destinations.html">Langtang Valley</a></li>
+            <li><a href="destinations.html">Gokyo Lakes</a></li>
+            <li><a href="destinations.html">Manaslu Circuit</a></li>
+          </ul>
+        </div>
+        <div class="f-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="https://www.welcomenepal.com" target="_blank">Nepal Tourism Board</a></li>
+            <li><a href="https://www.taan.org.np" target="_blank">Trekking Agents Assoc.</a></li>
+            <li><a href="https://www.whc.unesco.org" target="_blank">UNESCO Heritage Sites</a></li>
+            <li><a href="https://www.immigration.gov.np" target="_blank">Nepal Immigration</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     
+    <div class="container">
+      <div class="sec-nav">
+        <div class="sec-nav-links">
+          <a href="index.html">Home</a><span class="pipe">|</span>
+          <a href="destinations.html">Destinations</a><span class="pipe">|</span>
+          <a href="gallery.html">Gallery</a><span class="pipe">|</span>
+          <a href="about.html">About Us</a><span class="pipe">|</span>
+          <a href="contact.html">Contact</a><span class="pipe">|</span>
+          <a href="mailto:info@himalayanhorizons.com">Email Us</a>
+        </div>
+        <p class="copy">&copy; 2026 Himalayan Horizons. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
